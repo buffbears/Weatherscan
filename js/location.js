@@ -45,7 +45,7 @@ function Location() { // onReady, onRefresh, onAllComplete
 		}
 		
 		// woeid is the id for the location to pull data for
-		var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' + 
+		var url = 'https://weather-ydn-yql.media.yahoo.com/forecastrss?format=json&q=' + 
 			      'select * from weather.forecast where woeid' +
 				  (that.woeid ? '='+that.woeid : ' in (select woeid from geo.places(1) where text="(' + location + ')")' )
 
