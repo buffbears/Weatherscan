@@ -47,7 +47,7 @@ function Radar(divIDin, intervalHoursIn, zoomIn, latitudeIn, longitudeIn, withSa
 			zoomOffset: -1
 		}).addTo(map);
 		if (withSat == true) {
-			$.getJSON("https://api.weather.com/v3/TileServer/series/productSet/PPAcore?filter=satrad&apiKey=" + api_key, function(data) {
+			$.getJSON("https://api.weather.com/v3/TileServer/series/productSet?filter=satrad&apiKey=" + api_key, function(data) {
 				for (var i = 0; i < data.seriesInfo.satrad.series.length; i++) {
 					timeLayers.push(
 						L.tileLayer("https://api.weather.com/v3/TileServer/tile/satrad?ts="+ data.seriesInfo.satrad.series[i].ts +"&xyz={x}:{y}:{z}&apiKey=" + api_key, {
@@ -60,7 +60,7 @@ function Radar(divIDin, intervalHoursIn, zoomIn, latitudeIn, longitudeIn, withSa
 	        });
 			});
 		} else {
-		$.getJSON("https://api.weather.com/v3/TileServer/series/productSet/PPAcore?filter=radar&apiKey=" + api_key, function(data) {
+		$.getJSON("https://api.weather.com/v3/TileServer/series/productSet?filter=radar&apiKey=" + api_key, function(data) {
 			for (var i = 0; i < data.seriesInfo.radar.series.length; i++) {
 				timeLayers.push(
 					L.tileLayer("https://api.weather.com/v3/TileServer/tile/radar?ts="+ data.seriesInfo.radar.series[i].ts +"&xyz={x}:{y}:{z}&apiKey=" + api_key, {
