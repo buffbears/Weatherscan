@@ -1225,7 +1225,7 @@ var mainMap
 						setTimeout(function() {
 							$('.city-slide-intro .weatherscancopyright .copyrighttext').fadeOut(500, function(){
 								$('.city-slide-intro .weatherscancopyright .copyrighttext').css('font-size','15px')
-								$('.city-slide-intro .weatherscancopyright .copyrighttext').text("© 2021 Weather Group Television LLC All Rights Reserved")
+								$('.city-slide-intro .weatherscancopyright .copyrighttext').text("© 2022 Weather Group Television LLC All Rights Reserved")
 							});
 							$('.city-slide-intro .weatherscancopyright .copyrighttext').fadeIn(500);
 						}, 5000);
