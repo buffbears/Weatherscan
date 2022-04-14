@@ -1,5 +1,6 @@
 # Weatherscan Simulator
 Weatherscan simulation in HTML/JS/CSS
+*This is a custom fork of weatherscan simulator, currently maintained by Goldblaze/buffbears
 
 Visit https://weatherscan.tk/?long_island for a demo
 
