@@ -21,7 +21,7 @@ function WeatherAudio() {
 			var musicpath = "music/";
 
 			// insert track names
-			for (var i = 29; i<66; i++) {
+			for (var i = 30; i<66; i++) {
 				arr.push(musicpath + "Track " + String('0'+i).slice(-2) + '.mp3');
 			}
 
