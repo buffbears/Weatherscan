@@ -1243,7 +1243,7 @@ var mainMap
 							$('.city-slide-intro .cityweatherscanmarquee').fadeOut(500, function() {
 								$('.city-slide-intro').fadeOut(0);
 								$('.city-slide-intro .weatherscancopyright .copyrighttext').css('font-size','28px')
-								$('.city-slide-intro .weatherscancopyright .copyrighttext').text("Weatherscan is brought to you by The Weather Channel® and MIDCO")
+								$('.city-slide-intro .weatherscancopyright .copyrighttext').text("Weatherscan is brought to you by Weather Group Television and XFINITY TV")
 								wait(0);
 							});
 						}, 10000);
