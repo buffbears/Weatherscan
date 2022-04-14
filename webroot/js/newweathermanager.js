@@ -5,7 +5,7 @@ function spinything() {
     rotatex = (Math.floor(-100 + Math.random()*(100 + 1 - -100)))/100
     rotatey = (Math.floor(-100 + Math.random()*(100 + 1 - -100)))/100
     rotatez = (Math.floor(-100 + Math.random()*(100 + 1 - -100)))/100
-    $("#headendid").text("headend id: 028471")
+    $("#headendid").text("headend id: 0"+Math.round(Math.random()*100000))
     $("#serialnumber").text("serial number: N/A")
     $("#affilatename").text("affiliate name: XFINITY TV")
     $(".intellistarlogo").css( { transition: `transform 5s linear`,
