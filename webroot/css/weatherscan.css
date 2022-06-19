@@ -3941,7 +3941,7 @@ label{
   display: inline-block;
   transform-origin: left center;
   top: 50%;
-  transform: scale(106%, 100%) translateY(-50%);
+  transform: scale(110%, 100%) translateY(-50%);
   line-height: 23.5px;
   font-family: Interstate;
   font-size: 30px;
@@ -3959,10 +3959,10 @@ label{
 #info-slides-header .divider-arrow {
   font-size: 26px;
   display: inline-block;
-  transform: scale(1, 1.05) translate(0, -2.5px);;
+  transform: scale(1, 1.05) translate(4px, -2.5px);;
   transform-origin: left center;
   font-weight: 700;
-  padding: 0 7px
+  padding: 0 12px
 }
 
 
