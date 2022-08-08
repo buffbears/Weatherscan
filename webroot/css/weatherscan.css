@@ -4881,7 +4881,8 @@ label{
   transform: scale(106%, 100%) translateY(-50%);
   line-height: 23.5px;
   font-family: Interstate;
-  font-size: 30px;
+  font-size: 27px;
+  font-smooth: always;
 }
 #info-slides-header .gradientthing {
   position: absolute;
@@ -4896,10 +4897,10 @@ label{
 #info-slides-header .divider-arrow {
   font-size: 26px;
   display: inline-block;
-  transform: scale(1, 1.05) translate(0, -2.5px);;
+  transform: scale(1, 1.05) translate(4px, -2.5px);;
   transform-origin: left center;
   font-weight: 700;
-  padding: 0 7px
+  padding: 0 12px
 }
 
 
@@ -5559,7 +5560,7 @@ label{
 }
 .city-slide-intro {
   position: relative;
-  background: transparent url(/images/newbg/city_bg.png) no-repeat bottom;
+  background: transparent url(/images/newbg/minneapolis_bg.png) no-repeat bottom;
   background-size: 1068px 788px;
   background-position: -127px -112px;
 }
@@ -6422,7 +6423,7 @@ label{
   font-weight: 400;
   padding-top: .52%;
   font-stretch: expanded;
-  transform: scale(110%, 100%);
+  transform: scale(100%, 100%);
   transform-origin: left;
   filter: drop-shadow(.5px 0 0 #171717);
 }
