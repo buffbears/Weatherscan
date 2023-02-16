@@ -3,7 +3,7 @@ var customMap = false;
 
 function initBasemaps() {
 	//main map
-	mapboxgl.accessToken = 'pk.eyJ1IjoiZ29sZGJibGF6ZXoiLCJhIjoiY2tiZTRnb2Q2MGkxajJwbzV2bWd5dXI5MyJ9.jU-2DqGCBI14K-acyN9RCw';
+	mapboxgl.accessToken = '';
 	map = new mapboxgl.Map({
 		container: 'radar-3', // container ID
 		style: 'mapbox://styles/goldbblazez/cl10wz58y000q14ptdm3vkmxe', // style URL
