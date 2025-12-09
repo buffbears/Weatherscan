@@ -575,7 +575,7 @@ weatherAPI.setCacheTTL(10 * 60 * 1000);
 This implementation provides a **complete, production-ready** migration from weather.com API to freely accessible alternatives (OpenWeatherMap + RainViewer).
 
 **Key Benefits**:
-- ✅ Easy to obtain API keys (no community hostility)
+- ✅ Publicly accessible API keys with straightforward registration
 - ✅ Free tier sufficient for continuous operation
 - ✅ Docker-ready for easy deployment
 - ✅ Comprehensive documentation

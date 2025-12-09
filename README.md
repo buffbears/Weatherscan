@@ -12,12 +12,12 @@ Visit https://weatherscan.me/?Philadelphia for a demo
 
 ## 🎉 New: Migrated to Free & Accessible APIs!
 
-This fork has been **completely migrated** from the hard-to-obtain weather.com API to:
+This fork has been **completely migrated** to use publicly accessible weather APIs:
 - ✅ **OpenWeatherMap** (free tier: 1,000 calls/day) - [Get API Key](https://openweathermap.org/api)
 - ✅ **RainViewer** (completely free) - No API key needed!
 - ✅ **Mapbox** (free tier: 50,000 loads/month) - [Get API Key](https://www.mapbox.com/)
 
-**No more community hostility over API keys!** Everything you need is freely available.
+**All APIs are publicly accessible with free tiers.** No special arrangements needed!
 
 ---
 

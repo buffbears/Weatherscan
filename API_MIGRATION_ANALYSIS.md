@@ -5,7 +5,7 @@
 
 ## Executive Summary
 
-This Weatherscan IntelliStar simulator currently relies on the **Weather.com API** (TWC/IBM), which requires API keys that are difficult to obtain and not shared by the community. This document analyzes the current implementation and provides recommendations for migrating to freely available weather APIs.
+This Weatherscan IntelliStar simulator was originally built using the **Weather.com API** (TWC/IBM). This document analyzes the original implementation and documents the migration to publicly accessible weather APIs with available free tiers.
 
 ### Current State
 - **20+ unique weather.com endpoints** across v1, v2, and v3 APIs
@@ -623,7 +623,7 @@ async function fetchWithCache(lat, lon) {
 4. **Future Enhancement**: Consider Tomorrow.io paid tier if health data becomes essential
 
 This approach provides the best balance of:
-- ✅ Easy API access (no community hostility)
+- ✅ Publicly accessible API with straightforward registration
 - ✅ Free or low-cost operation
 - ✅ Comprehensive weather data coverage
 - ✅ Minimal feature loss (optional health slides)
