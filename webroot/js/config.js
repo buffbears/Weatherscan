@@ -1,9 +1,9 @@
-//Some of the settings may or may not work as this is not a fully completed update. Mainly Appearance settings and weather variables that arent finished.
-//Input API Keys below. If no API is inputted, sim will default to no report.
+//Configuration file for Weatherscan emulator
+//Input API Keys below. If no API key is provided, the system will default to no report.
 var api_key = '';
 var map_key = '';
 
-//Apperance settings. Fields left blank will use defaults. Will only refresh upon reload.
+//Appearance settings. Fields left blank will use defaults. Will only refresh upon reload.
 var apperanceSettings = {
   iconSet:"2010", //2007 or 2010
   serialNumber:"",// Ex. "TWCS02983932"
@@ -41,7 +41,7 @@ var slideApperanceSettings = {//Ill add more options here eventually.
   costalWatersAlerts: {},
   costalWatersForecast: {},
   healthIntro: {},
-  healthForecast: {cityHeaderEnding: ""}, //ill make these work later too lazy right now
+  healthForecast: {cityHeaderEnding: ""},
   pollen: {cityHeaderEnding: ""},
   achesBreath: {cityHeaderEnding: ""},
   airQuality: {cityHeaderEnding: ""},
@@ -79,7 +79,7 @@ var severeLoopSettings = {radarTransition:true,order:[
   {type:"severe-cities",repeat:true,locidx:0,slideDelay:10000,slideOrder:[{name:"severeCurrentConditions",slideDelay:""},{name:"localDoppler",slideDelay:"",testDisplay:'return (Math.random() > 0.5) ? true : false',alternate:{name:"regionalSatellite",slideDelay:""}},{name:"severeDayPart",slideDelay:""},{name:"severeExtendedForecast",slideDelay:""}]}
 ]}
 var audioSettings = {
-  enableMusic: true, //Something is wrong if you set this to false.
+  enableMusic: true, //Enables background music.
   order: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33], //The order the music will play. To include or exclude tracks add or remove their number to the order. Default is 1-33. 34-46 are known 2003 tracks excluding duplicates with 2007. 47-51 are known 2006 tracks excluding duplicates with 2007 and 2003. 52-53 are other weatherscan tracks from unknown year. 54-66 is Trammel Starks 1 not used in any other section. 67-76 is Trammel Starks 2 excluding duplicates. 77-83 is Trammel Starks 3 excluding duplicates.
   shuffle: false, //Shuffle audio. Default is false.
   randomStart: true, //Starts the order from a random spot. Default is true.
@@ -345,7 +345,7 @@ var locationSettings = {
         searchResultNum:"",
       }
     },
-  ],//to be functional in a future update
+  ],
   airportLocations:[//For main airports slide.
     {
       displayName:"",
@@ -423,14 +423,11 @@ var locationSettings = {
     },
   ]
 }
-//var mapSettings = {}
-//to be functional in a future update
-//This section will deal with all weather variables. Blank fields will use API data. You can update this via console and data will be refreshed on a set time.
 var weatherInfoSettings = {
   currentCond: {
     sidebar: {
       noReport:false, //If true, shows no report.
-      displayname:"", //Ove
+      displayname:"",
       temp:"", //
       cond:"",
       icon:"",

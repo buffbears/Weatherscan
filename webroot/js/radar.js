@@ -83,8 +83,6 @@ function initBasemaps() {
 			map.setPaintProperty('major cities','icon-opacity', 0)
 			map.setPaintProperty('airport-label medium','icon-opacity', 0)
 			map.setPaintProperty('airport-label large','icon-opacity', 0)
-			//insert custom map code
-			//remove this code once done
 			map.addSource('customcitypoints', {
 				'type': 'geojson',
 				'data': {
@@ -693,7 +691,6 @@ function initBasemaps() {
 	satellitemap = new mapboxgl.Map({
 		container: 'satrad-1', // container ID // style URL
 		style: 'mapbox://styles/goldbblazez/cl188bbm3000f14rmh9mcqbp8',
-		//testing coords -82.6065, 29.6464
 		center: [maincitycoords.lon, maincitycoords.lat], // starting position [lng, lat]
 		zoom: 4.7, // starting zoom
 		projection: {
@@ -706,9 +703,7 @@ function initBasemaps() {
 		satellitemap.addSource('basemaptiles', {
 			'type': 'raster',
 				'tiles': [
-					//'http://127.0.0.1/cgi-bin/qgis_mapserv.fcgi.exe?map=E:/desktop/lambertproject/lambertmapforlatera.qgz&BBOX={bbox-epsg-3857}&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:3857&WIDTH=512&HEIGHT=512&LAYERS=Lambertmap_modified&format=image/png'
 					'https://api.mapbox.com/styles/v1/goldbblazez/cl6jfozbb001h15sdx9ze69f7/tiles/{z}/{x}/{y}?access_token=' + map_key
-					//'./lamberttest3/{z}/{x}/{y}.png'
 				],
 				'tileSize': 512
 			});
@@ -737,8 +732,6 @@ function initBasemaps() {
 				'type': 'raster',
 					'tiles': [
 						'https://api.mapbox.com/styles/v1/goldbblazez/cl6jfozbb001h15sdx9ze69f7/tiles/{z}/{x}/{y}?access_token=' + map_key
-						//'http://127.0.0.1/cgi-bin/qgis_mapserv.fcgi.exe?map=E:/desktop/mecratorproject/mapprojectforlater.qgz&BBOX={bbox-epsg-3857}&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:3857&WIDTH=512&HEIGHT=512&LAYERS=USA_modified&format=image/png'
-						//'./test/{z}/{x}/{y}.png'
 					],
 					'tileSize': 512,
 					'minzoom': 6,
@@ -1384,7 +1377,6 @@ function Radar(divIDin, intervalHoursIn, zoomIn, latitudeIn, longitudeIn, withSa
 			fullscreenControl: false,
 			center: [latitude, longitude],
 			dragging: false,
-			 // 31.205482,-82.4331197 test coordinates
 		});
 		if (divID == "radar-1") {
 			mmap = map;
